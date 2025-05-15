@@ -1,24 +1,81 @@
-## Description
-A deep learning-based system designed to detect tomato leaf diseases such as Early Blight, Late Blight, and Mosaic Virus using images uploaded by users. This project aims to assist farmers in diagnosing diseases early, ensuring healthier crops and improved yield.
+# 🍅 Tomato Leaf Disease Classification System
 
-## Features
-- Image-based tomato leaf disease detection.
-- Supports multiple disease classifications.
-- User-friendly interface for uploading and analyzing images.
-- Generates actionable insights for users.
+A deep learning-powered web application that classifies tomato leaf diseases such as **Early Blight**, **Late Blight**, and **Mosaic Virus** using uploaded images. This tool is designed to help farmers and agriculturists identify plant health issues early, enabling better crop management and yield.
 
-## Tech Stack
-- **Programming Language:** Python
-- **Frameworks and Libraries:** TensorFlow/Keras, OpenCV, NumPy, Pandas
-- **Frontend:** Streamlit
-- **Visualization:** Matplotlib, Seaborn
+## 🚀 Features
 
-## Dataset
-- The model is trained on a curated dataset of tomato leaf images, containing healthy and diseased samples.
-- The dataset includes images for Early Blight, Late Blight, Mosaic Virus, and healthy leaves.
+- 📸 Image-based tomato leaf disease classification
+- 🧠 Trained deep learning model using Convolutional Neural Networks (CNNs)
+- 🌱 Supports multiple disease categories: Early Blight, Late Blight, Mosaic Virus, and Healthy
+- 🖼️ Interactive UI for uploading and analyzing images
+- 📊 Displays classification result with confidence score
+- 💡 Provides insights and visual feedback to the user
 
-## How It Works
-1. **Image Upload:** Users upload an image of a tomato leaf.
-2. **Preprocessing:** The image is resized, normalized, and preprocessed using OpenCV.
-3. **Prediction:** The deep learning model (CNN) analyzes the image and classifies the disease.
-4. **Results Display:** The system provides the disease name and confidence score
+---
+
+## 🛠️ Tech Stack
+
+| Category         | Tools/Technologies                          |
+|------------------|---------------------------------------------|
+| Programming      | Python                                      |
+| Deep Learning    | TensorFlow, Keras                           |
+| Image Processing | OpenCV, NumPy                               |
+| Data Handling    | Pandas                                      |
+| Visualization    | Matplotlib, Seaborn                         |
+| Frontend         | Streamlit                                   |
+
+---
+
+## 📂 Dataset
+
+The classification model is trained on a curated dataset of tomato leaf images, which includes:
+
+- Healthy Leaf Images
+- Early Blight Affected Leaves
+- Late Blight Affected Leaves
+- Mosaic Virus Affected Leaves
+
+➡️ Dataset Source: [Kaggle - PlantVillage Tomato Leaf Dataset](https://www.kaggle.com/datasets/)
+
+---
+
+## ⚙️ How It Works
+
+1. **Image Upload**  
+   Users upload an image of a tomato leaf via a simple Streamlit interface.
+
+2. **Preprocessing**  
+   The uploaded image is:
+   - Resized to a standard input size
+   - Normalized
+   - Converted to array and processed using OpenCV
+
+3. **Prediction**  
+   The preprocessed image is fed into a CNN model trained to classify diseases.
+
+4. **Result Display**  
+   The app:
+   - Shows the predicted disease label
+   - Displays a confidence percentage
+   - Optionally visualizes the input and prediction result
+
+---
+
+## 🖥️ Running the Project Locally
+
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/your-username/tomato-leaf-disease-classification.git
+cd tomato-leaf-disease-classification
+
+# Step 2: Create virtual environment and activate it
+python -m venv venv
+source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate     # For Windows
+
+# Step 3: Install dependencies
+pip install -r requirements.txt
+
+# Step 4: Run the app
+streamlit run app.py
+

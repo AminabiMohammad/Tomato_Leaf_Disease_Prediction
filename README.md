@@ -28,14 +28,10 @@ A deep learning-powered web application that classifies tomato leaf diseases suc
 
 ## 📂 Dataset
 
-The classification model is trained on a curated dataset of tomato leaf images, which includes:
+Dataset contains 18,345 training and 4,585 validation images across 10 disease classes from the **New Plant Diseases Dataset (Augmented)**.
 
-- Healthy Leaf Images
-- Early Blight Affected Leaves
-- Late Blight Affected Leaves
-- Mosaic Virus Affected Leaves
 
-➡️ Dataset Source: [Kaggle - PlantVillage Tomato Leaf Dataset](https://www.kaggle.com/datasets/)
+
 
 ---
 
